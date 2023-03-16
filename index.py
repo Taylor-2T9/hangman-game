@@ -24,3 +24,14 @@ errors = 0
 def jogo(keys, mask, limit, errors):
     for key in keys:
         mask.append('_')
+    while (mask != keys):
+        print("A palavra é " + ''.join(mask))
+        attempt = input("Digite uma letra: ")
+        attempts.append(attempt)
+        for i, letter in enumerate(keys):
+            if (attempt == letter):
+                mask[i] = attempt
+    os.system('cls')
+    return print('Parabéns, você acertou! A palavra é ' + ''.join(mask))
+
+jogo(keys, mask, limit, errors)
