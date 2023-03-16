@@ -12,3 +12,13 @@ words = [
 ]
 
 secret_word = words[random.randint(1, len(words)-1)]
+
+mask = []
+
+attempts = []
+limit = 5
+errors = 0
+
+def jogo(keys, mask, limit, errors):
+    for key in keys:
+        mask.append('_')
