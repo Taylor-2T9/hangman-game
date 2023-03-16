@@ -13,6 +13,8 @@ words = [
 
 secret_word = words[random.randint(1, len(words)-1)]
 
+keys = list(secret_word)
+
 mask = []
 
 attempts = []
